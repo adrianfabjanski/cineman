@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
+
+html {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(36, 36, 36) 100%);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main-cnt {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.main-cnt h1 {
+  color: whitesmoke;
+}
+
+#search-input {
+  padding: 10px;
+  width: 250px;
+  outline: none;
+  border: none;
+}
+
+.movies-cnt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  margin: 0 10%;
+  height: 100%;
+}
+
+.movies-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 450px;
+  margin: 0 50px;
+  margin-top: 70px;
+}
+
+.movie-title {
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.movie-poster {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-poster:hover {
+  transform: scale(1.03);
+  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.1);
+}
+
+.movie-buttons {
+  display: flex;
+  margin: 10px 2px;
+}
+
+.movie-btn {
+  padding: 10px;
+  width: 120px;
+  margin: 0 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: rgb(250, 170, 7, 0.8);
+  color: whitesmoke;
+  transition: 0.2s ease;
+}
+
+.movie-btn:hover {
+  background: rgba(165, 113, 9, 0.8);
+}
+
+.noimage {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  height: 300px;
+  font-size: 20px;
+}
+
+#pages-p {
+  color: whitesmoke;
+}
+
+.watchlater-movies-cnt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-top: 100px; */
+  margin: 0 10%;
+  height: auto;
+}
+
+#watch-list {
+  color: whitesmoke;
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#watched-header {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.side-menu {
+  overflow: auto;
+  z-index: 6;
+  width: 350px;
+  position: fixed;
+  right: -80%;
+  height: 100vh;
+  top: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(36, 36, 36, 0.8) 100%
+  );
+  transition: 1200ms ease;
+}
+
+.side-menu.active {
+  right: 0;
+  transition: 800ms ease;
+}
+
+.close-sidebar-cnt {
+  height: 10%;
+}
+
+.close-sidebar-cnt p {
+  float: left;
+  display: flex;
+  color: whitesmoke;
+  font-size: 25px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.no-results {
+  margin-top: 10%;
+  color: whitesmoke;
+  height: 100vh;
+}
